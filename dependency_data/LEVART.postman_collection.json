@@ -1,0 +1,56 @@
+{
+	"info": {
+		"_postman_id": "c8722905-9a6b-4b54-ad38-4bab9e132a40",
+		"name": "LEVART",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5474719",
+		"_collection_link": "https://baswara-project.postman.co/workspace/Candra's-Workspace~fa0abd79-e0cf-4da0-ab83-553613157e44/collection/5474719-c8722905-9a6b-4b54-ad38-4bab9e132a40?action=share&source=collection_link&creator=5474719"
+	},
+	"item": [
+		{
+			"name": "SEND MAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"receiver_mail\":\"racerxkids@gmail.com\",\n    \"subject_mail\":\"TEST SEND MAIL Lagi\",\n    \"message\":\"Succesfull send\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET LIST OF SEND MAIL",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8000/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
