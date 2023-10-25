@@ -2,9 +2,15 @@
 require 'vendor/autoload.php';
 use Dotenv\Dotenv;
 
-use Src\System\DatabaseConnector;
+use Src\System\DatabaseConfiguration;
+
+// This is credential from google cloud platform OAuth2
+$clientId = ""; 
+$clientSecret = "";
+$callbackUri = "";
+$tokenUri = "";
 
 $dotenv = new DotEnv(__DIR__);
 $dotenv->load();
 
-$dbConnection = (new DatabaseConnector())->getConnection();
+$dbConnection = (new DatabaseConfiguration())->getConnection();
